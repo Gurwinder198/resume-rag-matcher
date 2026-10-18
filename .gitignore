@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.env
+chroma_db/
+chroma_db_notebook/
+.ipynb_checkpoints/
+.superpowers/
