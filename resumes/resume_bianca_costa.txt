@@ -1,0 +1,16 @@
+Bianca Costa
+Full Stack Developer | bianca.costa@example.com
+
+SUMMARY
+Full Stack Developer with 7 years of experience in JavaScript and React.
+
+SKILLS
+JavaScript, React, Node.js, Python, Django
+
+EXPERIENCE
+Full Stack Developer, Stark Industries (2019 - present)
+- Delivered production JavaScript systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BTech Information Technology, UCLA (2015)

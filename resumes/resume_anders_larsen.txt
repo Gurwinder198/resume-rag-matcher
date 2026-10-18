@@ -1,0 +1,16 @@
+Anders Larsen
+Full Stack Developer | anders.larsen@example.com
+
+SUMMARY
+Full Stack Developer with 5 years of experience in JavaScript and React.
+
+SKILLS
+JavaScript, React, Node.js, Python, Django, SQL
+
+EXPERIENCE
+Full Stack Developer, Vandelay (2021 - present)
+- Delivered production JavaScript systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Computer Science, IIT Delhi (2017)

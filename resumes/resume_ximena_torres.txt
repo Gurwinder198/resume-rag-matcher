@@ -1,0 +1,16 @@
+Ximena Torres
+DevOps Engineer | ximena.torres@example.com
+
+SUMMARY
+DevOps Engineer with 7 years of experience in Kubernetes and Terraform.
+
+SKILLS
+Kubernetes, Terraform, AWS, Bash, CI/CD
+
+EXPERIENCE
+DevOps Engineer, Umbrella (2019 - present)
+- Delivered production Kubernetes systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BEng Software Engineering, Georgia Tech (2015)

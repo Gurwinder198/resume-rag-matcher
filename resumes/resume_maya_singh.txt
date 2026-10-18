@@ -1,0 +1,16 @@
+Maya Singh
+Frontend Developer | maya.singh@example.com
+
+SUMMARY
+Frontend Developer with 2 years of experience in JavaScript and TypeScript.
+
+SKILLS
+JavaScript, TypeScript, React, Next.js, Jest
+
+EXPERIENCE
+Frontend Developer, Initech (2024 - present)
+- Delivered production JavaScript systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BTech Information Technology, University of Toronto (2020)

@@ -1,0 +1,16 @@
+David Okafor
+Machine Learning Engineer | david.okafor@example.com
+
+SUMMARY
+Machine Learning Engineer with 7 years of experience in Python and PyTorch.
+
+SKILLS
+Python, PyTorch, TensorFlow, scikit-learn, Machine Learning
+
+EXPERIENCE
+Machine Learning Engineer, Umbrella (2019 - present)
+- Delivered production Python systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BEng Software Engineering, UCLA (2015)

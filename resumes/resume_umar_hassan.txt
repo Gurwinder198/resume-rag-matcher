@@ -1,0 +1,16 @@
+Umar Hassan
+DevOps Engineer | umar.hassan@example.com
+
+SUMMARY
+DevOps Engineer with 2 years of experience in Kubernetes and Terraform.
+
+SKILLS
+Kubernetes, Terraform, AWS, Bash, CI/CD
+
+EXPERIENCE
+DevOps Engineer, Acme (2024 - present)
+- Delivered production Kubernetes systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BSc Computer Science, University of Toronto (2020)

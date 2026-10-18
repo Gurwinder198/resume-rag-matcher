@@ -1,0 +1,16 @@
+Tara Patel
+Backend Developer | tara.patel@example.com
+
+SUMMARY
+Backend Developer with 7 years of experience in Java and Spring.
+
+SKILLS
+Java, Spring, SQL, Docker, Kubernetes
+
+EXPERIENCE
+Backend Developer, Wonka Inc (2019 - present)
+- Delivered production Java systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Data Science, UCLA (2015)

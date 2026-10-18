@@ -1,0 +1,16 @@
+Vera Ivanova
+DevOps Engineer | vera.ivanova@example.com
+
+SUMMARY
+DevOps Engineer with 3 years of experience in Kubernetes and Terraform.
+
+SKILLS
+Kubernetes, Terraform, AWS, Bash, CI/CD, Linux
+
+EXPERIENCE
+DevOps Engineer, Globex (2023 - present)
+- Delivered production Kubernetes systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Computer Science, NUS (2019)

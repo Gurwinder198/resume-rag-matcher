@@ -1,0 +1,16 @@
+Ewan Fraser
+QA Automation Engineer | ewan.fraser@example.com
+
+SUMMARY
+QA Automation Engineer with 5 years of experience in Selenium and Python.
+
+SKILLS
+Selenium, Python, Jest, CI/CD, Jira, Git
+
+EXPERIENCE
+QA Automation Engineer, Acme (2021 - present)
+- Delivered production Selenium systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BSc Computer Science, ETH Zurich (2017)

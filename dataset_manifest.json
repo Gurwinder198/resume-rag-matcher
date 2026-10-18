@@ -1,0 +1,497 @@
+{
+  "resumes": [
+    {
+      "file": "resume_alice_nguyen.pdf",
+      "name": "Alice Nguyen",
+      "role": "ML Engineer",
+      "years_experience": 2,
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "Machine Learning"
+      ]
+    },
+    {
+      "file": "resume_bob_smith.docx",
+      "name": "Bob Smith",
+      "role": "ML Engineer",
+      "years_experience": 3,
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "Machine Learning",
+        "NLP"
+      ]
+    },
+    {
+      "file": "resume_carla_mehta.txt",
+      "name": "Carla Mehta",
+      "role": "ML Engineer",
+      "years_experience": 5,
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "Machine Learning",
+        "NLP",
+        "Docker"
+      ]
+    },
+    {
+      "file": "resume_david_okafor.txt",
+      "name": "David Okafor",
+      "role": "ML Engineer",
+      "years_experience": 7,
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "Machine Learning"
+      ]
+    },
+    {
+      "file": "resume_elena_rossi.txt",
+      "name": "Elena Rossi",
+      "role": "Data Engineer",
+      "years_experience": 2,
+      "skills": [
+        "Python",
+        "Spark",
+        "Airflow",
+        "dbt",
+        "SQL"
+      ]
+    },
+    {
+      "file": "resume_farhan_khan.txt",
+      "name": "Farhan Khan",
+      "role": "Data Engineer",
+      "years_experience": 3,
+      "skills": [
+        "Python",
+        "Spark",
+        "Airflow",
+        "dbt",
+        "SQL",
+        "Snowflake"
+      ]
+    },
+    {
+      "file": "resume_grace_lindqvist.txt",
+      "name": "Grace Lindqvist",
+      "role": "Data Engineer",
+      "years_experience": 5,
+      "skills": [
+        "Python",
+        "Spark",
+        "Airflow",
+        "dbt",
+        "SQL",
+        "Snowflake",
+        "Kafka"
+      ]
+    },
+    {
+      "file": "resume_hiro_tanaka.txt",
+      "name": "Hiro Tanaka",
+      "role": "Data Engineer",
+      "years_experience": 7,
+      "skills": [
+        "Python",
+        "Spark",
+        "Airflow",
+        "dbt",
+        "SQL"
+      ]
+    },
+    {
+      "file": "resume_isabel_garcia.pdf",
+      "name": "Isabel Garcia",
+      "role": "Data Scientist",
+      "years_experience": 2,
+      "skills": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "SQL",
+        "Machine Learning"
+      ]
+    },
+    {
+      "file": "resume_jamal_haddad.docx",
+      "name": "Jamal Haddad",
+      "role": "Data Scientist",
+      "years_experience": 3,
+      "skills": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "SQL",
+        "Machine Learning",
+        "Tableau"
+      ]
+    },
+    {
+      "file": "resume_kavya_rao.txt",
+      "name": "Kavya Rao",
+      "role": "Data Scientist",
+      "years_experience": 5,
+      "skills": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "SQL",
+        "Machine Learning",
+        "Tableau"
+      ]
+    },
+    {
+      "file": "resume_liam_murphy.txt",
+      "name": "Liam Murphy",
+      "role": "Data Scientist",
+      "years_experience": 7,
+      "skills": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "SQL",
+        "Machine Learning"
+      ]
+    },
+    {
+      "file": "resume_maya_singh.txt",
+      "name": "Maya Singh",
+      "role": "Frontend Developer",
+      "years_experience": 2,
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Jest"
+      ]
+    },
+    {
+      "file": "resume_noah_clark.txt",
+      "name": "Noah Clark",
+      "role": "Frontend Developer",
+      "years_experience": 3,
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Jest",
+        "Figma"
+      ]
+    },
+    {
+      "file": "resume_olivia_dubois.txt",
+      "name": "Olivia Dubois",
+      "role": "Frontend Developer",
+      "years_experience": 5,
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Jest",
+        "Figma"
+      ]
+    },
+    {
+      "file": "resume_priya_sharma.txt",
+      "name": "Priya Sharma",
+      "role": "Frontend Developer",
+      "years_experience": 7,
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Jest"
+      ]
+    },
+    {
+      "file": "resume_quentin_reyes.pdf",
+      "name": "Quentin Reyes",
+      "role": "Backend Developer",
+      "years_experience": 2,
+      "skills": [
+        "Java",
+        "Spring",
+        "SQL",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "file": "resume_rosa_fernandez.docx",
+      "name": "Rosa Fernandez",
+      "role": "Backend Developer",
+      "years_experience": 3,
+      "skills": [
+        "Java",
+        "Spring",
+        "SQL",
+        "Docker",
+        "Kubernetes",
+        "REST"
+      ]
+    },
+    {
+      "file": "resume_sam_lee.txt",
+      "name": "Sam Lee",
+      "role": "Backend Developer",
+      "years_experience": 5,
+      "skills": [
+        "Java",
+        "Spring",
+        "SQL",
+        "Docker",
+        "Kubernetes",
+        "REST",
+        "Kafka"
+      ]
+    },
+    {
+      "file": "resume_tara_patel.txt",
+      "name": "Tara Patel",
+      "role": "Backend Developer",
+      "years_experience": 7,
+      "skills": [
+        "Java",
+        "Spring",
+        "SQL",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "file": "resume_umar_hassan.txt",
+      "name": "Umar Hassan",
+      "role": "DevOps Engineer",
+      "years_experience": 2,
+      "skills": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "Bash",
+        "CI/CD"
+      ]
+    },
+    {
+      "file": "resume_vera_ivanova.txt",
+      "name": "Vera Ivanova",
+      "role": "DevOps Engineer",
+      "years_experience": 3,
+      "skills": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "Bash",
+        "CI/CD",
+        "Linux"
+      ]
+    },
+    {
+      "file": "resume_wei_zhang.txt",
+      "name": "Wei Zhang",
+      "role": "DevOps Engineer",
+      "years_experience": 5,
+      "skills": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "Bash",
+        "CI/CD",
+        "Linux",
+        "Docker"
+      ]
+    },
+    {
+      "file": "resume_ximena_torres.txt",
+      "name": "Ximena Torres",
+      "role": "DevOps Engineer",
+      "years_experience": 7,
+      "skills": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "Bash",
+        "CI/CD"
+      ]
+    },
+    {
+      "file": "resume_yusuf_ahmed.pdf",
+      "name": "Yusuf Ahmed",
+      "role": "Full Stack Developer",
+      "years_experience": 2,
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python",
+        "Django"
+      ]
+    },
+    {
+      "file": "resume_zoe_brooks.docx",
+      "name": "Zoe Brooks",
+      "role": "Full Stack Developer",
+      "years_experience": 3,
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python",
+        "Django",
+        "SQL"
+      ]
+    },
+    {
+      "file": "resume_anders_larsen.txt",
+      "name": "Anders Larsen",
+      "role": "Full Stack Developer",
+      "years_experience": 5,
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python",
+        "Django",
+        "SQL"
+      ]
+    },
+    {
+      "file": "resume_bianca_costa.txt",
+      "name": "Bianca Costa",
+      "role": "Full Stack Developer",
+      "years_experience": 7,
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python",
+        "Django"
+      ]
+    },
+    {
+      "file": "resume_chen_wu.txt",
+      "name": "Chen Wu",
+      "role": "QA Engineer",
+      "years_experience": 2,
+      "skills": [
+        "Selenium",
+        "Python",
+        "Jest",
+        "CI/CD",
+        "Jira"
+      ]
+    },
+    {
+      "file": "resume_dalia_hernandez.txt",
+      "name": "Dalia Hernandez",
+      "role": "QA Engineer",
+      "years_experience": 3,
+      "skills": [
+        "Selenium",
+        "Python",
+        "Jest",
+        "CI/CD",
+        "Jira",
+        "Git"
+      ]
+    },
+    {
+      "file": "resume_ewan_fraser.txt",
+      "name": "Ewan Fraser",
+      "role": "QA Engineer",
+      "years_experience": 5,
+      "skills": [
+        "Selenium",
+        "Python",
+        "Jest",
+        "CI/CD",
+        "Jira",
+        "Git"
+      ]
+    },
+    {
+      "file": "resume_fiona_moreau.txt",
+      "name": "Fiona Moreau",
+      "role": "QA Engineer",
+      "years_experience": 7,
+      "skills": [
+        "Selenium",
+        "Python",
+        "Jest",
+        "CI/CD",
+        "Jira"
+      ]
+    }
+  ],
+  "job_descriptions": [
+    {
+      "file": "jd_ml_engineer.txt",
+      "role": "ML Engineer",
+      "min_years": 5,
+      "required_skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn"
+      ]
+    },
+    {
+      "file": "jd_data_engineer.txt",
+      "role": "Data Engineer",
+      "min_years": 5,
+      "required_skills": [
+        "Python",
+        "Spark",
+        "Airflow",
+        "dbt"
+      ]
+    },
+    {
+      "file": "jd_frontend_developer.txt",
+      "role": "Frontend Developer",
+      "min_years": 5,
+      "required_skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js"
+      ]
+    },
+    {
+      "file": "jd_devops_engineer.txt",
+      "role": "DevOps Engineer",
+      "min_years": 5,
+      "required_skills": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "Bash"
+      ]
+    },
+    {
+      "file": "jd_full_stack_developer.txt",
+      "role": "Full Stack Developer",
+      "min_years": 5,
+      "required_skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python"
+      ]
+    }
+  ]
+}

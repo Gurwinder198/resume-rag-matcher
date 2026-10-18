@@ -1,0 +1,16 @@
+Noah Clark
+Frontend Developer | noah.clark@example.com
+
+SUMMARY
+Frontend Developer with 3 years of experience in JavaScript and TypeScript.
+
+SKILLS
+JavaScript, TypeScript, React, Next.js, Jest, Figma
+
+EXPERIENCE
+Frontend Developer, Umbrella (2023 - present)
+- Delivered production JavaScript systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BEng Software Engineering, NUS (2019)

@@ -1,0 +1,16 @@
+Fiona Moreau
+QA Automation Engineer | fiona.moreau@example.com
+
+SUMMARY
+QA Automation Engineer with 7 years of experience in Selenium and Python.
+
+SKILLS
+Selenium, Python, Jest, CI/CD, Jira
+
+EXPERIENCE
+QA Automation Engineer, Globex (2019 - present)
+- Delivered production Selenium systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Computer Science, Georgia Tech (2015)

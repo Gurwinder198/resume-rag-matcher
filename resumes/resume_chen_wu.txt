@@ -1,0 +1,16 @@
+Chen Wu
+QA Automation Engineer | chen.wu@example.com
+
+SUMMARY
+QA Automation Engineer with 2 years of experience in Selenium and Python.
+
+SKILLS
+Selenium, Python, Jest, CI/CD, Jira
+
+EXPERIENCE
+QA Automation Engineer, Wayne Enterprises (2024 - present)
+- Delivered production Selenium systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BEng Software Engineering, University of Toronto (2020)

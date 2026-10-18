@@ -1,0 +1,16 @@
+Grace Lindqvist
+Data Engineer | grace.lindqvist@example.com
+
+SUMMARY
+Data Engineer with 5 years of experience in Python and Spark.
+
+SKILLS
+Python, Spark, Airflow, dbt, SQL, Snowflake, Kafka
+
+EXPERIENCE
+Data Engineer, Vandelay (2021 - present)
+- Delivered production Python systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Computer Science, ETH Zurich (2017)

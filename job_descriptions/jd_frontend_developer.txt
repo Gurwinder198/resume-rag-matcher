@@ -1,0 +1,9 @@
+We are hiring a Frontend Developer.
+
+About the role:
+We need someone who can own JavaScript and TypeScript work end to end.
+
+Must have:
+JavaScript, TypeScript, React, Next.js
+
+Requires 5+ years of experience.

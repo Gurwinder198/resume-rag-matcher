@@ -1,0 +1,16 @@
+Wei Zhang
+DevOps Engineer | wei.zhang@example.com
+
+SUMMARY
+DevOps Engineer with 5 years of experience in Kubernetes and Terraform.
+
+SKILLS
+Kubernetes, Terraform, AWS, Bash, CI/CD, Linux, Docker
+
+EXPERIENCE
+DevOps Engineer, Initech (2021 - present)
+- Delivered production Kubernetes systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BTech Information Technology, ETH Zurich (2017)

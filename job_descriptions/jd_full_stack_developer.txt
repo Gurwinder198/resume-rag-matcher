@@ -1,0 +1,9 @@
+We are hiring a Full Stack Developer.
+
+About the role:
+We need someone who can own JavaScript and React work end to end.
+
+Must have:
+JavaScript, React, Node.js, Python
+
+Requires 5+ years of experience.

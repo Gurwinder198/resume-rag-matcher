@@ -1,0 +1,16 @@
+Olivia Dubois
+Frontend Developer | olivia.dubois@example.com
+
+SUMMARY
+Frontend Developer with 5 years of experience in JavaScript and TypeScript.
+
+SKILLS
+JavaScript, TypeScript, React, Next.js, Jest, Figma
+
+EXPERIENCE
+Frontend Developer, Soylent (2021 - present)
+- Delivered production JavaScript systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Data Science, ETH Zurich (2017)

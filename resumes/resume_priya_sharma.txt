@@ -1,0 +1,16 @@
+Priya Sharma
+Frontend Developer | priya.sharma@example.com
+
+SUMMARY
+Frontend Developer with 7 years of experience in JavaScript and TypeScript.
+
+SKILLS
+JavaScript, TypeScript, React, Next.js, Jest
+
+EXPERIENCE
+Frontend Developer, Hooli (2019 - present)
+- Delivered production JavaScript systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BSc Computer Science, Georgia Tech (2015)

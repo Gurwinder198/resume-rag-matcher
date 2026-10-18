@@ -1,0 +1,16 @@
+Liam Murphy
+Data Scientist | liam.murphy@example.com
+
+SUMMARY
+Data Scientist with 7 years of experience in Python and Pandas.
+
+SKILLS
+Python, Pandas, NumPy, SQL, Machine Learning
+
+EXPERIENCE
+Data Scientist, Globex (2019 - present)
+- Delivered production Python systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Computer Science, UCLA (2015)

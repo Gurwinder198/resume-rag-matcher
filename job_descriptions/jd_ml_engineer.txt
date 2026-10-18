@@ -1,0 +1,9 @@
+We are hiring a Machine Learning Engineer.
+
+About the role:
+We need someone who can own Python and PyTorch work end to end.
+
+Must have:
+Python, PyTorch, TensorFlow, scikit-learn
+
+Requires 5+ years of experience.

@@ -1,0 +1,16 @@
+Dalia Hernandez
+QA Automation Engineer | dalia.hernandez@example.com
+
+SUMMARY
+QA Automation Engineer with 3 years of experience in Selenium and Python.
+
+SKILLS
+Selenium, Python, Jest, CI/CD, Jira, Git
+
+EXPERIENCE
+QA Automation Engineer, Wonka Inc (2023 - present)
+- Delivered production Selenium systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Data Science, NUS (2019)

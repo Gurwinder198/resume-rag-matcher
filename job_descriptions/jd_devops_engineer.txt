@@ -1,0 +1,9 @@
+We are hiring a DevOps Engineer.
+
+About the role:
+We need someone who can own Kubernetes and Terraform work end to end.
+
+Must have:
+Kubernetes, Terraform, AWS, Bash
+
+Requires 5+ years of experience.

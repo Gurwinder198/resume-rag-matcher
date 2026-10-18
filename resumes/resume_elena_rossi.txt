@@ -1,0 +1,16 @@
+Elena Rossi
+Data Engineer | elena.rossi@example.com
+
+SUMMARY
+Data Engineer with 2 years of experience in Python and Spark.
+
+SKILLS
+Python, Spark, Airflow, dbt, SQL
+
+EXPERIENCE
+Data Engineer, Soylent (2024 - present)
+- Delivered production Python systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+MSc Data Science, University of Toronto (2020)

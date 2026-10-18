@@ -1,0 +1,16 @@
+Sam Lee
+Backend Developer | sam.lee@example.com
+
+SUMMARY
+Backend Developer with 5 years of experience in Java and Spring.
+
+SKILLS
+Java, Spring, SQL, Docker, Kubernetes, REST, Kafka
+
+EXPERIENCE
+Backend Developer, Wayne Enterprises (2021 - present)
+- Delivered production Java systems used across the organization.
+- Collaborated cross-functionally to ship features on schedule.
+
+EDUCATION
+BEng Software Engineering, IIT Delhi (2017)
