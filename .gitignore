@@ -8,3 +8,4 @@ chroma_db/
 chroma_db_notebook/
 .ipynb_checkpoints/
 .superpowers/
+docs/superpowers/
