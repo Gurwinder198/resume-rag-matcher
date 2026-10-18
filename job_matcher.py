@@ -16,12 +16,24 @@ import re
 from pathlib import Path
 from typing import Any, Optional
 
-from metadata_extractor import KNOWN_SKILLS
+from metadata_extractor import AMBIGUOUS_SKILLS, KNOWN_SKILLS
+from resume_rag import UNKNOWN_EXPERIENCE_YEARS
 from vector_store import VectorStore
 
 _SKILL_LOOKUP = {s.lower(): s for s in KNOWN_SKILLS}
 
-_MIN_YEARS_RE = re.compile(r"(\d+)\+?\s*years?", re.IGNORECASE)
+
+def _skill_pattern(lower: str, canonical: str) -> re.Pattern:
+    if lower in AMBIGUOUS_SKILLS:
+        return re.compile(r"(?<![\w+#.])" + re.escape(canonical) + r"(?![\w+#])")
+    return re.compile(r"(?<![\w+#.])" + re.escape(lower) + r"(?![\w+#])", re.IGNORECASE)
+
+# A minimum-years requirement is conventionally written with a "+" ("5+
+# years") or near a requirement cue word ("requires 5 years", "minimum of
+# 5 years", "at least 5 years"). An unanchored "N years" match would also
+# fire on incidental mentions like "25 years of company history".
+_MIN_YEARS_PLUS_RE = re.compile(r"(\d+)\+\s*years?", re.IGNORECASE)
+_MIN_YEARS_CONTEXT_RE = re.compile(r"(?:require[sd]?|minimum|at least)\D{0,20}?(\d+)\s*years?", re.IGNORECASE)
 _MUST_HAVE_SECTION_RE = re.compile(
     r"(?:must[- ]have|required skills|requirements?)\s*:?\s*\n?(.*?)(?:\n\s*\n|\Z)",
     re.IGNORECASE | re.DOTALL,
@@ -31,7 +43,7 @@ _MUST_HAVE_SECTION_RE = re.compile(
 def _find_skills(text: str) -> list[str]:
     found: dict[str, str] = {}
     for lower, canonical in _SKILL_LOOKUP.items():
-        pattern = re.compile(r"(?<![\w+#.])" + re.escape(lower) + r"(?![\w+#])", re.IGNORECASE)
+        pattern = _skill_pattern(lower, canonical)
         if pattern.search(text):
             found[lower] = canonical
     return sorted(found.values())
@@ -41,7 +53,9 @@ def extract_requirements(job_description: str) -> dict:
     """Pull hard requirements out of a JD: mentioned skills (for scoring),
     explicit must-have skills (for hard filtering), and minimum experience years."""
     section_match = _MUST_HAVE_SECTION_RE.search(job_description)
-    years = [float(m.group(1)) for m in _MIN_YEARS_RE.finditer(job_description)]
+    years = [float(m.group(1)) for m in _MIN_YEARS_PLUS_RE.finditer(job_description)]
+    if not years:
+        years = [float(m.group(1)) for m in _MIN_YEARS_CONTEXT_RE.finditer(job_description)]
     return {
         "mentioned_skills": _find_skills(job_description),
         "must_have_skills": _find_skills(section_match.group(1)) if section_match else [],
@@ -122,7 +136,8 @@ class JobMatcher:
                 any(req.lower() == s.lower() for s in candidate["skills"]) for req in required_skills
             ):
                 continue
-            if min_years is not None and (candidate["experience_years"] or 0.0) < min_years:
+            exp_years = candidate["experience_years"]
+            if min_years is not None and exp_years != UNKNOWN_EXPERIENCE_YEARS and exp_years < min_years:
                 continue
 
             matched_skills = sorted(
@@ -178,7 +193,14 @@ def main(argv: Optional[list[str]] = None) -> int:
 
         llm_client = OpenRouter(api_key=os.getenv("OPENROUTER_API_KEY"))
 
-    must_have = [s.strip() for s in args.must_have_skills.split(",")] if args.must_have_skills else None
+    # None means "flag omitted" (auto-detect must-haves from the JD); an
+    # explicit "" means "override with no must-haves" and must not fall
+    # through to auto-detection just because the string is falsy.
+    must_have = (
+        [s.strip() for s in args.must_have_skills.split(",") if s.strip()]
+        if args.must_have_skills is not None
+        else None
+    )
     matcher = JobMatcher(vector_store=VectorStore(persist_dir=args.persist_dir), llm_client=llm_client)
     result = matcher.match(
         job_description,

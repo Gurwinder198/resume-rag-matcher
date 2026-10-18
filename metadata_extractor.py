@@ -20,6 +20,18 @@ KNOWN_SKILLS = [
 ]
 _SKILL_LOOKUP = {s.lower(): s for s in KNOWN_SKILLS}
 
+# Single words that are also ordinary English words ("go to the store", "excel
+# at", "rest well", "spark ideas", "each spring") — matched case-sensitively
+# against their canonical skill casing instead of case-insensitively, since a
+# false match here feeds straight into job_matcher's must-have hard filter.
+AMBIGUOUS_SKILLS = {"go", "rest", "excel", "spring", "spark"}
+
+
+def _skill_pattern(lower: str, canonical: str) -> re.Pattern:
+    if lower in AMBIGUOUS_SKILLS:
+        return re.compile(r"(?<![\w+#.])" + re.escape(canonical) + r"(?![\w+#])")
+    return re.compile(r"(?<![\w+#.])" + re.escape(lower) + r"(?![\w+#])", re.IGNORECASE)
+
 _SECTION_RE = {
     "skills": re.compile(
         r"(?:^|\n)\s*(?:SKILLS|TECHNICAL SKILLS|CORE COMPETENCIES)\s*:?\s*\n(.*?)"
@@ -73,7 +85,7 @@ def _extract_skills(text: str) -> list[str]:
         for lower, canonical in _SKILL_LOOKUP.items():
             if canonical.lower() in found:
                 continue
-            pattern = re.compile(r"(?<![\w+#.])" + re.escape(lower) + r"(?![\w+#])", re.IGNORECASE)
+            pattern = _skill_pattern(lower, canonical)
             if pattern.search(haystack):
                 found[canonical.lower()] = canonical
     return sorted(found.values())

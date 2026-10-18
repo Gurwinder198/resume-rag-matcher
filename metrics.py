@@ -7,14 +7,14 @@ from typing import Callable
 
 
 def precision_at_k(retrieved: list[str], relevant: set[str], k: int) -> float:
-    """Fraction of the top-k retrieved candidate names/paths that are relevant."""
+    """Fraction of the k requested slots that are relevant. Dividing by k
+    (not by however many were actually retrieved) means a short result list
+    is penalized for its unfilled slots, per the standard precision@k
+    definition."""
     if k <= 0:
         return 0.0
-    top_k = retrieved[:k]
-    if not top_k:
-        return 0.0
-    hits = sum(1 for item in top_k if item in relevant)
-    return hits / len(top_k)
+    hits = sum(1 for item in retrieved[:k] if item in relevant)
+    return hits / k
 
 
 def measure_latency(func: Callable[[], object]) -> tuple[object, float]:

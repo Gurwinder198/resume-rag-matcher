@@ -69,3 +69,27 @@ def test_ingest_on_empty_directory_returns_zero_counts(tmp_path):
     rag = ResumeRAG(resumes_dir=tmp_path / "empty", vector_store=store)
     summary = rag.ingest()
     assert summary == {"resumes_processed": 0, "resumes_failed": 0, "chunks_created": 0}
+
+
+def test_ingest_file_with_no_extractable_text_is_reported_as_failed(tmp_path):
+    empty_resume = tmp_path / "resume_empty.txt"
+    empty_resume.write_text("   \n  ", encoding="utf-8")
+
+    store = VectorStore(persist_dir=tmp_path / "chroma_db")
+    rag = ResumeRAG(resumes_dir=tmp_path, vector_store=store)
+    result = rag.ingest_file(str(empty_resume))
+
+    assert result["success"] is False
+    assert "error" in result
+
+
+def test_ingest_counts_empty_resume_as_failed_not_processed(tmp_path):
+    (tmp_path / "resume_alice.txt").write_text(RESUME_A, encoding="utf-8")
+    (tmp_path / "resume_empty.txt").write_text("   \n  ", encoding="utf-8")
+
+    store = VectorStore(persist_dir=tmp_path / "chroma_db")
+    rag = ResumeRAG(resumes_dir=tmp_path, vector_store=store)
+    summary = rag.ingest()
+
+    assert summary["resumes_processed"] == 1
+    assert summary["resumes_failed"] == 1

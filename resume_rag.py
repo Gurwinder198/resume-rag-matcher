@@ -20,6 +20,12 @@ from vector_store import VectorStore
 
 SUPPORTED_EXTENSIONS = (".pdf", ".docx", ".txt", ".md")
 
+# ChromaDB metadata values can't be None, so a resume with no detectable
+# years of experience is stored as this sentinel rather than 0.0 — 0.0 would
+# be indistinguishable from an actual new grad and would wrongly fail every
+# min-years filter. job_matcher treats this sentinel as "unknown, don't filter".
+UNKNOWN_EXPERIENCE_YEARS = -1.0
+
 
 class ResumeRAG:
     def __init__(
@@ -41,10 +47,13 @@ class ResumeRAG:
             return {"success": False, "resume_path": filepath, "chunks_created": 0, "error": read["error"]}
 
         text = read["content"]
-        metadata = extract_metadata(text, read["metadata"]["name"])
         chunks = chunk_resume(text)
         if not chunks:
-            return {"success": True, "resume_path": filepath, "chunks_created": 0}
+            warning = read["metadata"].get("warning")
+            error = warning or "No content extracted from resume (file may be empty or a scanned image)."
+            return {"success": False, "resume_path": filepath, "chunks_created": 0, "error": error}
+
+        metadata = extract_metadata(text, read["metadata"]["name"])
 
         store_chunks = []
         for chunk in chunks:
@@ -57,7 +66,11 @@ class ResumeRAG:
                     "section": chunk["section"],
                     "candidate_name": metadata["name"],
                     "skills": ", ".join(metadata["skills"]),
-                    "experience_years": metadata["experience_years"] or 0.0,
+                    "experience_years": (
+                        metadata["experience_years"]
+                        if metadata["experience_years"] is not None
+                        else UNKNOWN_EXPERIENCE_YEARS
+                    ),
                     "education": " | ".join(metadata["education"]),
                 },
             })

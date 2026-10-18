@@ -51,3 +51,12 @@ def test_missing_sections_degrade_gracefully():
 def test_falls_back_to_filename_when_first_line_is_not_a_name():
     meta = extract_metadata("SKILLS\nPython\n", "resume_alex_chen.txt")
     assert meta["name"] == "Alex Chen"
+
+
+def test_does_not_match_ambiguous_skill_words_in_ordinary_prose():
+    text = (
+        "I excel at getting things done and I am ready to go. "
+        "I rest well and spark ideas each spring."
+    )
+    meta = extract_metadata(text, "resume_plain.txt")
+    assert meta["skills"] == []

@@ -51,9 +51,12 @@ is used (no API key needed).
 
 `notebooks/rag_experimentation.ipynb` — ingestion, chunking inspection,
 precision@5 per job description (against `dataset_manifest.json` ground
-truth), and latency. On the generated dataset it measured **precision@5 =
-1.0 for all 5 job descriptions** and **~18ms mean match() latency**.
-Regenerate with:
+truth, measured on the unfiltered ranker — no must-have hard filter — so it
+scores the semantic+keyword ranking itself), and latency. On the generated
+dataset it measured **precision@5 = 0.4 for every job description** (2 of
+4 same-role resumes land in the top 5 of 10 ranked candidates, with the true
+matches scoring ~30 points above the next-best candidate) and **~20ms mean
+match() latency**. Regenerate with:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\build_notebook.py

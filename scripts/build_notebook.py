@@ -38,10 +38,14 @@ chunks = chunk_resume(sample_path.read_text(encoding="utf-8"))
     """matcher = JobMatcher(vector_store=store)
 role_by_file = {r["file"]: r["role"] for r in manifest["resumes"]}
 
+# must_have_skills=[] / min_experience_years=None bypass the hard must-have
+# filter so this measures the semantic+keyword ranker itself, not the filter
+# (with the filter on, only the 1-2 candidates meeting every must-have for
+# that role can ever appear, which would make precision@5 near-tautological).
 precisions = {}
 for jd in manifest["job_descriptions"]:
     jd_text = (BASE / "job_descriptions" / jd["file"]).read_text(encoding="utf-8")
-    result = matcher.match(jd_text, top_k=10)
+    result = matcher.match(jd_text, top_k=10, must_have_skills=[], min_experience_years=None)
     retrieved_paths = [Path(m["resume_path"]).name for m in result["top_matches"]]
     relevant = {f for f, role in role_by_file.items() if role == jd["role"]}
     precisions[jd["file"]] = precision_at_k(retrieved_paths, relevant, k=5)
